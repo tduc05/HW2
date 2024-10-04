@@ -1,0 +1,167 @@
+/* Basic body styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6; /* Improved readability */
+    background-color: #121111; /* Set the background color to black */
+    color: #000000; /* Set the default text color to white for contrast */
+}
+
+/* Header styles */
+header {
+    background-color: #86b6ea; /* Blue background */
+    color: white; /* White text */
+    padding: 15px; /* Padding around the header */
+    text-align: right; /* Text aligned to the right */
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.698); /* Add subtle shadow for depth */
+}
+
+/* Navigation styles */
+nav ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove default margin */
+    display: flex; /* Use flexbox for horizontal alignment */
+    justify-content: flex-end; /* Align items to the right */
+}
+
+nav ul li {
+    margin-right: 20px; /* Space between items */
+}
+
+nav ul li:last-child {
+    margin-right: 0; /* No margin on the last item */
+}
+
+nav ul li a {
+    color: rgb(255, 255, 255); /* White link color */
+    text-decoration: none; /* Remove underline */
+    padding: 10px; /* Add padding for better click area */
+    transition: background-color 0.3s ease; /* Smooth hover effect */
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.218); /* Light background on hover */
+    border-radius: 5px; /* Round the corners */
+}
+
+section {
+    padding: 20px; /* Padding around sections */
+    margin: 20px auto; /* Auto margins for center alignment */
+    max-width: 1200px; /* Set max width for content */
+    background: linear-gradient(135deg, rgba(165, 199, 223, 1) 0%, rgba(255, 255, 255, 1) 100%); 
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.613); /* Light shadow for depth */
+    border-radius: 8px; /* Rounded corners */
+
+}
+
+.welcome-container {
+    display: flex; /* Use flexbox for side-by-side layout */
+    align-items: center; /* Vertically center items */
+    gap: 20px; /* Space between text and image */
+    justify-content: flex-start; /* Align items to the start */
+}
+
+.tebogo-img {
+    max-width: 200px; /* Set a smaller width for the Tebogo image */
+    height: auto; /* Maintain aspect ratio */
+    margin-left: 170px; /* Add margin to shift the image to the right */
+}
+/* Image styles */
+img {
+    max-width: 150px; /* Set a smaller width for the image */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensure image alignment */
+    margin: 20px 0; /* Space around images */
+}
+
+/* Footer styles */
+footer {
+    background-color: #414141; /* Dark gray background */
+    color: white; /* White text */
+    text-align: center; /* Centered text */
+    padding: 20px; /* Padding around footer */
+    margin-top: 40px; /* Space above footer */
+    font-size: 14px; /* Smaller font size */
+}
+
+/* Form styles */
+form {
+    display: flex; /* Flexbox for layout */
+    flex-direction: column; /* Stack items vertically */
+}
+
+form label {
+    margin: 10px 0 5px; /* Margin for labels */
+    font-weight: bold; /* Bold labels */
+}
+
+form input,
+form textarea {
+    padding: 10px; /* Padding inside inputs */
+    margin-bottom: 10px; /* Space below inputs */
+    border: 1px solid #d8d5d5; /* Light gray border */
+    border-radius: 4px; /* Slightly rounded corners */
+    width: 100%; /* Full width */
+    box-sizing: border-box; /* Make sure padding and border fit */
+}
+
+button {
+    background-color: #000000; /* Blue background */
+    color: rgb(255, 255, 255); /* White text */
+    padding: 12px 20px; /* Padding inside button */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    transition: background-color 0.3s ease; /* Smooth hover transition */
+}
+
+button:hover {
+    background-color: #91b7dd; /* Darker blue on hover */
+}
+
+/* Table styles */
+table {
+    width: 100%; /* Full width */
+    border-collapse: collapse; /* Remove space between borders */
+    margin: 20px 0; /* Space above and below */
+    background-color: white; /* White background for table */
+}
+
+th, td {
+    border: 2px solid #5b5a5a; /* Light gray border */
+    padding: 12px; /* Padding inside cells */
+    text-align: left; /* Left align text */
+}
+
+th {
+    background-color: #b6cfecf1; /* Light background for table header */
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 600px) {
+    nav ul {
+        flex-direction: column; /* Stack navigation items vertically */
+        align-items: flex-start; /* Align items to the left */
+    }
+    
+    nav ul li {
+        margin-right: 0; /* Remove right margin */
+        margin-bottom: 10px; /* Add bottom margin */
+    }
+
+    section {
+        padding: 15px; /* Reduce padding */
+        margin: 10px; /* Reduce section margin */
+    }
+
+    footer {
+        padding: 15px; /* Reduce footer padding */
+    }
+
+    form input,
+    form textarea {
+        font-size: 16px; /* Larger input text for accessibility */
+    }
+}
