@@ -53,7 +53,6 @@ section {
     background: linear-gradient(135deg, rgba(165, 199, 223, 1) 0%, rgba(255, 255, 255, 1) 100%); 
     box-shadow: 0 4px 8px rgba(255, 255, 255, 0.613); /* Light shadow for depth */
     border-radius: 8px; /* Rounded corners */
-
 }
 
 .welcome-container {
@@ -63,11 +62,6 @@ section {
     justify-content: flex-start; /* Align items to the start */
 }
 
-.tebogo-img {
-    max-width: 200px; /* Set a smaller width for the Tebogo image */
-    height: auto; /* Maintain aspect ratio */
-    margin-left: 170px; /* Add margin to shift the image to the right */
-}
 /* Image styles */
 img {
     max-width: 150px; /* Set a smaller width for the image */
